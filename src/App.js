@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Joke from "./components/Joke";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const containerStyle = {
+  display: "flex",
+  flexDirection: "column",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  lineHeight: "1.5rem",
+  margin: "1rem"
+};
+
+function App() {
+  return (
+    <div style={containerStyle}>
+      <Joke
+        question="What do you call a factory that sells passable products?"
+        punchLine="A satisfactory."
+      />
+      <Joke
+        question="Why did the invisible man turn down the job offer?"
+        punchLine="He couldn't see himself doing it."
+      />
+      <Joke punchLine="I'm reading a book about anti-gravity. It's impossible to put down!" />
+      <Joke
+        question="You know what the loudest pet you can get is?"
+        punchLine="A trumpet."
+      />
+      <Joke punchLine="You heard of that new band 1023MB? They're good but they haven't got a gig yet." />
+    </div>
+  );
 }
 
 export default App;
