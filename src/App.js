@@ -5,6 +5,7 @@ const containerStyle = {
   display: "flex",
   flexDirection: "column",
   flexWrap: "wrap",
+  fontFamily: "Montserrat, sans-serif",
   justifyContent: "center",
   lineHeight: "1.5rem",
   margin: "1rem"
